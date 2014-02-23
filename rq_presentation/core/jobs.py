@@ -27,9 +27,11 @@ def _evil():
 
 
 def evil():
-    while True:
+    i = 0
+    while i < 300:
         try:
             _evil()
-        except Exception as e:
-            print(e)
+        except:
+            print('ZONK!')
+        i += 1
     return 1
